@@ -110,11 +110,7 @@
     tablink.classList.remove("color-red");
     tablink = document.getElementById("pres4");
     tablink.classList.remove("color-red");
-    // for (i = 0; i < x.length; i++) {
-    //   console.log(tablinks[i].className);
-    //   tablinks[i].className = tablinks[i].className.replace(" color-red", " test");
-    //   console.log(tablinks[i].className);
-    // }
+
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " color-red";
   }
