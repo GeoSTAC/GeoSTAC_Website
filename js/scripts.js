@@ -102,10 +102,19 @@
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" color-red", "");
-    }
+    tablink = document.getElementById("pres1");
+    tablink.classList.remove("color-red");
+    tablink = document.getElementById("pres2");
+    tablink.classList.remove("color-red");
+    tablink = document.getElementById("pres3");
+    tablink.classList.remove("color-red");
+    tablink = document.getElementById("pres4");
+    tablink.classList.remove("color-red");
+    // for (i = 0; i < x.length; i++) {
+    //   console.log(tablinks[i].className);
+    //   tablinks[i].className = tablinks[i].className.replace(" color-red", " test");
+    //   console.log(tablinks[i].className);
+    // }
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " color-red";
   }

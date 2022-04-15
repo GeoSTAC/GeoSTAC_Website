@@ -99,6 +99,14 @@
                 onclick="openDocument(event, 'requirements-doc')">
                 Requirements
                 </button>
+                <button class = "bar-item geo-button tabLink"
+                onclick="openDocument(event, 'design-doc')">
+                Design
+                </button>
+                <button class = "bar-item geo-button tabLink"
+                onclick="openDocument(event, 'testing-doc')">
+                Testing Plan
+                </button>
               </div>
             </center>
             <br>
@@ -165,6 +173,34 @@
                 </div>
               </div>
             </div>
+            <div id = "design-doc" class = "documents"
+            style="display:none;">
+              <div class = "md-layout">
+                <br>
+                <br>
+                <div class="md-layout-item"
+                style="text-align:center;">
+                <iframe src="../documents/Final-Design-Document.pdf"
+                  style="width: 90%; height: 600px">
+                      <p>Your browser does not support iframes.</p>
+                </iframe>
+                </div>
+              </div>
+            </div>
+            <div id = "testing-doc" class = "documents"
+            style="display:none;">
+              <div class = "md-layout">
+                <br>
+                <br>
+                <div class="md-layout-item"
+                style="text-align:center;">
+                <iframe src="../documents/Software-Test-Plan.pdf"
+                  style="width: 90%; height: 600px">
+                      <p>Your browser does not support iframes.</p>
+                </iframe>
+                </div>
+              </div>
+            </div>
           </div>
           <div id="content">
             <div>
@@ -180,17 +216,21 @@
             </div>
             <center class="tab">
               <div class = "bar-black text-center">
-                <button class = "bar-item geo-button tabLink color-red"
+                <button id="pres1" class = "bar-item geo-button tabLink color-red"
                 onclick="openPresentation(event, 'mini-intro')">
                 Mini Intro
                 </button>
-                <button class = "bar-item geo-button tabLink"
+                <button id="pres2" class = "bar-item geo-button tabLink"
                 onclick="openPresentation(event, 'design-review')">
                 Design Review 1
                 </button>
-                <button class = "bar-item geo-button tabLink"
+                <button id="pres3" class = "bar-item geo-button tabLink"
                 onclick="openPresentation(event, 'design-review-2')">
                 Design Review 2
+                </button>
+                <button id="pres4" class = "bar-item geo-button tabLink"
+                onclick="openPresentation(event, 'design-review-3')">
+                Design Review 3
                 </button>
               </div>
             </center>
@@ -236,6 +276,21 @@
                   allowfullscreen>
                   </iframe>
                 </center>
+                </div>
+              </div>
+            </div>
+            <div id = "design-review-3" class = "presentations" style="display:none;">
+              <div class = "md-layout" >
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="md-layout-item"
+                style="text-align:center;">
+                <iframe src="../documents/Design-Review-III.pdf"
+                  style="width: 90%; height: 600px">
+                      <p>Your browser does not support iframes.</p>
+                </iframe>
                 </div>
               </div>
             </div>
