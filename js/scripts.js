@@ -110,6 +110,8 @@
     tablink.classList.remove("color-red");
     tablink = document.getElementById("pres4");
     tablink.classList.remove("color-red");
+    tablink = document.getElementById("pres5");
+    tablink.classList.remove("color-red");
 
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " color-red";
